@@ -1,0 +1,130 @@
+.title {
+    text-align: center;
+    color: #000;
+}
+
+.section_search {
+    padding: 2rem 0;
+}
+
+.section_search p {
+    margin: 0.5rem auto;
+    text-align: center;
+    color: #000;
+}
+
+.section_search form {
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_search #search {
+    font-size: 0.9rem;
+    padding: 0.9rem;
+    width: 400px;
+    border-radius: 10rem;
+    border: 2px solid #c1c1c1;
+    transition: 0.3s;
+}
+
+.section_search #search:focus {
+    outline: none;
+    border: 2px solid #38BDF8;
+    transition: 0.3s;
+}
+
+.section_search .btn_search {
+    width: 100px;
+    height: 50px;
+    border-radius: 10rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #c1c1c1;
+    background-color: #fff;
+    font-size: 0.9rem;
+}
+
+.section_search .btn_search:hover {
+    border: 2px solid #38BDF8;
+    transition: 0.3s;
+}
+
+.section_search .btn_search_disabled {
+    width: 100px;
+    height: 50px;
+    border-radius: 10rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #c1c1c1;
+    background-color: #fff;
+    font-size: 0.9rem;
+    cursor: no-drop;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.categorie {
+    width: max-content;
+    background-color: #FFF;
+    border: 1px solid #c1c1c1;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.categorie:hover {
+    background-color: #f4f4f4;
+    border: 1px solid #38BDF8;
+    transition: 0.3s;
+}
+
+.line {
+    width: 150px;
+    height: 1.7px;
+    background-color: #38BDF8;
+    margin: 3.5rem auto 0rem auto;
+}
+
+
+@media (max-width: 720px) {
+    .section_search {
+        padding: 6rem 0.5rem 2rem 0.5rem;
+    }
+
+    .section_search form {
+        width: 100%;
+    }
+
+    label {
+        flex: 1;
+    }
+
+    .section_search #search {
+        width: 95%;
+    }
+
+    .section_search .btn_search {
+        width: 100px;
+        margin-left: 0.5rem;
+    }
+
+    .section_search .btn_search_disabled {
+        width: 100px;
+        margin-left: 0.5rem;
+    }
+}

@@ -1,0 +1,26 @@
+.arrow_btns {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    justify-content: flex-end;
+}
+
+.arrow_btns > button {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 50px;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: 2px solid #c1c1c1;
+    transition: 0.3s;
+}
+
+.arrow_btns > button:hover {
+    border: 2px solid #38BDF8;
+    transition: 0.3s;
+}
+
+.arrow_left, .arrow_right {
+    font-size: 1.6rem;
+}

@@ -1,0 +1,652 @@
+main {
+    flex: 1;
+}
+
+/* seção de eventos */
+
+.section_events {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f1f1f1;
+}
+
+.events_live {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.7rem;
+    font-size: 1.05rem;
+    width: max-content;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    background-color: #38BDF8;
+    margin-left: 1.5rem;
+}
+
+.no_events {
+    width: 100%;
+    padding: 1.3rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.section_events > .list_events {
+    overflow: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.section_events > .list_events::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+
+.event > .event_title {
+    text-align: center;
+    margin: 0.8rem 0;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event > div {
+    border-radius: 10px;
+    width: 300px;
+    height: 170px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0.4rem;
+    box-shadow: 1px 5px 7px #00000086;
+}
+
+.event > div:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.event > div > .watch {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1;
+    top: 80px;
+    right: 100px;
+    transition: 0.3s;
+    border: none;
+    background-color: #38BDF8;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.event > div > .watch:hover {
+    background-color: #4bc6fa;
+    transition: 0.3s;
+}
+
+.event > div:hover .watch {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.event > div > .status {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    padding: 0.4rem;
+    border-radius: 10px;
+    border: 1px solid #c1c1c1;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.event img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.category {
+    text-align: center;
+    color: #828282;
+    padding-top: 1rem;
+}
+
+.date_time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    color: #828282;
+    margin-left: -2.1rem;
+}
+
+.clock, .calendar, .date_time > span {
+    color: #000;
+}
+
+/* seção canais de esportes */
+
+.section_sports {
+    width: 100%;
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+.sports {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.7rem;
+    font-size: 1.05rem;
+    width: max-content;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    background-color: #38BDF8;
+    margin-left: 1.5rem;
+}
+
+.box_btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box_btns > .view_channels {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    width: max-content;
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: 2px solid #c1c1c1;
+    transition: 0.3s;
+}
+
+.box_btns > .view_channels:hover {
+    border: 2px solid #38BDF8;
+    transition: 0.3s;
+}
+
+.section_sports > .list_channels_sports {
+    overflow: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.section_sports > .list_channels_sports::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+
+.no_channels_sports {
+    width: 100%;
+    padding: 1.3rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.sport > .sports_title {
+    text-align: center;
+    margin: 0.8rem 0;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sport > div {
+    border-radius: 10px;
+    width: 300px;
+    height: 170px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0.4rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 5px 7px #00000086;
+    background-color: #262626;
+}
+
+.sport > div:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.sport > div > .watch {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1;
+    top: 80px;
+    right: 100px;
+    transition: 0.3s;
+    border: none;
+    background-color: #38BDF8;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sport > div > .watch:hover {
+    background-color: #4bc6fa;
+    transition: 0.3s;
+}
+
+.sport > div:hover .watch {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.sport img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+/* Seção canais de notícias */
+
+.section_noticies {
+    width: 100%;
+    padding: 2rem 2rem 4rem 2rem;
+    background-color: #f1f1f1;
+}
+
+.noticies {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.7rem;
+    font-size: 1.05rem;
+    width: max-content;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    background-color: #38BDF8;
+    margin-left: 1.5rem;
+}
+
+.section_noticies > .list_channels_noticies {
+    overflow: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.section_noticies > .list_channels_noticies::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+
+.no_channels_noticies {
+    width: 100%;
+    padding: 1.3rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.noticie > .noticies_title {
+    text-align: center;
+    margin: 0.8rem 0;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.noticie > div {
+    border-radius: 10px;
+    width: 300px;
+    height: 170px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0.4rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 5px 7px #00000086;
+    background-color: #262626;
+}
+
+.noticie > div:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.noticie > div > .watch {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1;
+    top: 80px;
+    right: 100px;
+    transition: 0.3s;
+    border: none;
+    background-color: #38BDF8;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.noticie > div > .watch:hover {
+    background-color: #4bc6fa;
+    transition: 0.3s;
+}
+
+.noticie > div:hover .watch {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.noticie img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+/* Seção canais de variedades */
+
+.section_varieties {
+    width: 100%;
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+.varieties {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.7rem;
+    font-size: 1.05rem;
+    width: max-content;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    background-color: #38BDF8;
+    margin-left: 1.5rem;
+}
+
+.section_varieties > .list_channels_varieties {
+    overflow: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.section_varieties > .list_channels_varieties::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+
+.no_channels_varieties {
+    width: 100%;
+    padding: 1.3rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.varietie > .varieties_title {
+    text-align: center;
+    margin: 0.8rem 0;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.varietie > div {
+    border-radius: 10px;
+    width: 300px;
+    height: 170px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0.4rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 5px 7px #00000086;
+    background-color: #262626;
+}
+
+.varietie > div:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.varietie > div > .watch {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1;
+    top: 80px;
+    right: 100px;
+    transition: 0.3s;
+    border: none;
+    background-color: #38BDF8;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.varietie > div > .watch:hover {
+    background-color: #4bc6fa;
+    transition: 0.3s;
+}
+
+.varietie > div:hover .watch {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.varietie img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+/* Seção canais Globo */
+
+.section_channels_globo {
+    width: 100%;
+    padding: 2rem 2rem 4rem 2rem;
+    background-color: #f1f1f1;
+}
+
+.channels_globo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.7rem;
+    font-size: 1.05rem;
+    width: max-content;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    background-color: #38BDF8;
+    margin-left: 1.5rem;
+}
+
+.section_channels_globo > .list_channels_globo {
+    overflow: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.section_channels_globo > .list_channels_globo::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+
+.no_channels_globo {
+    width: 100%;
+    padding: 1.3rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.channel_globo > .channels_globo_title {
+    text-align: center;
+    margin: 0.8rem 0;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.channel_globo > div {
+    border-radius: 10px;
+    width: 300px;
+    height: 170px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0.4rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 5px 7px #00000086;
+    background-color: #262626;
+}
+
+.channel_globo > div:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.channel_globo > div > .watch {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1;
+    top: 80px;
+    right: 100px;
+    transition: 0.3s;
+    border: none;
+    background-color: #38BDF8;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.channel_globo > div > .watch:hover {
+    background-color: #4bc6fa;
+    transition: 0.3s;
+}
+
+.channel_globo > div:hover .watch {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.channel_globo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 720px) {
+    
+    .section_events {
+        padding: 2rem 0.5rem;
+    }
+
+    .section_sports {
+        padding: 2rem 0.5rem;
+    }
+
+    .section_noticies {
+        padding: 2rem 0.5rem;
+    }
+
+    .section_varieties {
+        padding: 2rem 0.5rem;
+    }
+
+    .section_channels_globo {
+        padding: 2rem 0.5rem;
+    }
+
+    .box_btns {
+        padding-top: 1.5rem;
+    }
+}
