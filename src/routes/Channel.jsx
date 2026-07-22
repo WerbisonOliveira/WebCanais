@@ -28,8 +28,8 @@ function Channel() {
             <div className="box_channel">
               <iframe className="video" src={channel.embeds[0].embed_url} title={channel.name} allowFullScreen allow="autoplay; encrypted-media; picture-in-picture" frameBorder={0}>
               </iframe>
-              <div className="provider"onChange={(event) => changeProvider(event.target.value)}>
-                <select name="provider" id="provider_select">
+              <div className="provider">
+                <select name="provider" id="provider_select" onChange={(event) => changeProvider(event.target.value)}>
                   {channel.embeds.map((embed, index) => (
                     <option key={index} value={embed.embed_url}>{embed.provider} {embed.quality}</option>
                   ))}
