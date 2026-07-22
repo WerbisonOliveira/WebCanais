@@ -14,8 +14,8 @@ function Channel() {
 
   const channel = useFetch(`/channels/${id}`).data;
 
-  const video = document.querySelector(".video");
   const changeProvider = (url) => {
+    let video = document.querySelector(".video");
     video.setAttribute("src", `${url}`);
   }
 

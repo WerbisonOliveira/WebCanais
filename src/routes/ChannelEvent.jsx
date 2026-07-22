@@ -13,8 +13,8 @@ function ChannelEvent() {
   const {id} = useParams();
   const event = useFetch(`/sports/${id}`).data;
 
-  const video = document.querySelector(".video");
   const changeProvider = (url) => {
+    let video = document.querySelector(".video");
     video.setAttribute("src", `${url}`);
   }
 
