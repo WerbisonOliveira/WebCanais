@@ -30,7 +30,6 @@ function Home() {
 
   window.scrollTo(0, 0);
 
-
   return (
     <main>
       <section className="section_events">

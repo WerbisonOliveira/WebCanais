@@ -49,10 +49,10 @@ function NavBar() {
                 </div>
                 <ul className="navbar_menu">
                     <li>
-                        <NavLink className="menu_item" to={"/"} onClick={() => showMenu()}><GoHome/> Home</NavLink>
+                        <NavLink className="menu_item" to={"/"} onClick={() => window.innerWidth < 721 && showMenu()}><GoHome/> Home</NavLink>
                     </li>
                     <li>
-                        <NavLink className="menu_item" to={"/channels"} onClick={() => showMenu()}><MdLiveTv/> Canais</NavLink>
+                        <NavLink className="menu_item" to={"/channels"} onClick={() => window.innerWidth < 721 && showMenu()} ><MdLiveTv/> Canais</NavLink>
                     </li>
                 </ul>
                 <button className="button_menu" onClick={() => showMenu()}><CiMenuBurger className="menu"/></button>
