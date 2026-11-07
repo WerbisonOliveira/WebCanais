@@ -3,7 +3,7 @@ import {useState, useEffect} from "react";
 
 export function useFetch(path) {
 
-    const url = "https://api.reidoscanais.si";
+    const url = "https://api.reidoscanais.my";
 
     const [data, setData] = useState([]);
     
